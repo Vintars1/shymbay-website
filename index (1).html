@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shymbay Fruit Export</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- НАВИГАЦИЯ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="logo">Shymbay <span>Fruit</span> Export</div>
+      <ul class="nav-links">
+        <li><a href="#about"    data-ru="О нас"      data-en="About">О нас</a></li>
+        <li><a href="#products" data-ru="Продукция"  data-en="Products">Продукция</a></li>
+        <li><a href="#contact"  data-ru="Контакты"   data-en="Contact">Контакты</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('ru')">RU</button>
+        <button class="lang-btn"        onclick="setLang('en')">EN</button>
+      </div>
+      <button class="burger" id="burger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="mobile-menu" id="mobile-menu">
+      <li><a href="#about"    data-ru="О нас"     data-en="About"     onclick="toggleMenu()">О нас</a></li>
+      <li><a href="#products" data-ru="Продукция" data-en="Products"  onclick="toggleMenu()">Продукция</a></li>
+      <li><a href="#contact"  data-ru="Контакты"  data-en="Contact"   onclick="toggleMenu()">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-badge" data-ru="Узбекистан · Экспорт" data-en="Uzbekistan · Export">Узбекистан · Экспорт</div>
+      <h1 data-ru="Лучшие фрукты<br>из сердца Узбекистана" data-en="Premium Fruits<br>from the Heart of Uzbekistan">
+        Лучшие фрукты<br>из сердца Узбекистана
+      </h1>
+      <p data-ru="Поставляем свежие фрукты и овощи на международные рынки. Высокое качество, надёжная логистика."
+         data-en="We supply fresh fruits and vegetables to international markets. Premium quality, reliable logistics.">
+        Поставляем свежие фрукты и овощи на международные рынки. Высокое качество, надёжная логистика.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact"  class="btn-primary" data-ru="Связаться с нами" data-en="Contact Us">Связаться с нами</a>
+        <a href="#products" class="btn-outline"  data-ru="Наша продукция"   data-en="Our Products">Наша продукция</a>
+      </div>
+    </div>
+    <div class="hero-circles">
+      <div class="circle c1"></div>
+      <div class="circle c2"></div>
+      <div class="circle c3"></div>
+    </div>
+  </header>
+
+  <!-- СТАТИСТИКА -->
+  <section class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-num">15+</div>
+      <div class="stat-lbl" data-ru="лет опыта" data-en="years of experience">лет опыта</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">20+</div>
+      <div class="stat-lbl" data-ru="стран-партнёров" data-en="partner countries">стран-партнёров</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">5000т</div>
+      <div class="stat-lbl" data-ru="в год" data-en="per year">в год</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">100%</div>
+      <div class="stat-lbl" data-ru="свежесть" data-en="freshness">свежесть</div>
+    </div>
+  </section>
+
+  <!-- ПРОДУКЦИЯ -->
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section-tag" data-ru="ПРОДУКЦИЯ" data-en="PRODUCTS">ПРОДУКЦИЯ</div>
+      <h2 class="section-title" data-ru="Что мы экспортируем" data-en="What We Export">Что мы экспортируем</h2>
+      <p class="section-sub" data-ru="Широкий ассортимент свежих фруктов и овощей, выращенных в Узбекистане."
+                             data-en="A wide range of fresh fruits and vegetables grown in Uzbekistan.">
+        Широкий ассортимент свежих фруктов и овощей, выращенных в Узбекистане.
+      </p>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-icon">🍑</div>
+          <div class="product-name" data-ru="Персики"  data-en="Peaches">Персики</div>
+          <div class="product-desc" data-ru="Сочные ароматные персики из Ферганской долины" data-en="Juicy aromatic peaches from the Fergana Valley">Сочные ароматные персики из Ферганской долины</div>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">🍇</div>
+          <div class="product-name" data-ru="Виноград" data-en="Grapes">Виноград</div>
+          <div class="product-desc" data-ru="Столовые сорта, экспорт по всему миру" data-en="Table varieties, worldwide export">Столовые сорта, экспорт по всему миру</div>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">🍈</div>
+          <div class="product-name" data-ru="Дыня"     data-en="Melon">Дыня</div>
+          <div class="product-desc" data-ru="Знаменитые узбекские дыни — сладкие и ароматные" data-en="Famous Uzbek melons — sweet and fragrant">Знаменитые узбекские дыни — сладкие и ароматные</div>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">🍎</div>
+          <div class="product-name" data-ru="Яблоки"   data-en="Apples">Яблоки</div>
+          <div class="product-desc" data-ru="Свежие яблоки разных сортов, круглый год" data-en="Fresh apples of various varieties, year-round">Свежие яблоки разных сортов, круглый год</div>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">🍒</div>
+          <div class="product-name" data-ru="Вишня"    data-en="Cherry">Вишня</div>
+          <div class="product-desc" data-ru="Отборная черешня высшего качества" data-en="Selected cherries of the highest quality">Отборная черешня высшего качества</div>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">🌿</div>
+          <div class="product-name" data-ru="Зелень"   data-en="Greens">Зелень</div>
+          <div class="product-desc" data-ru="Свежая зелень и овощи прямо с полей" data-en="Fresh greens and vegetables from the fields">Свежая зелень и овощи прямо с полей</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- О НАС -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <div class="section-tag light" data-ru="О КОМПАНИИ" data-en="ABOUT US">О КОМПАНИИ</div>
+        <h2 class="section-title light" data-ru="Shymbay Fruit Export" data-en="Shymbay Fruit Export">Shymbay Fruit Export</h2>
+        <p data-ru="Мы — узбекская экспортная компания, специализирующаяся на поставке свежих фруктов и овощей на международные рынки. Наша миссия — донести вкус узбекских фруктов до всего мира."
+           data-en="We are an Uzbek export company specializing in supplying fresh fruits and vegetables to international markets. Our mission is to bring the taste of Uzbek fruits to the whole world.">
+          Мы — узбекская экспортная компания, специализирующаяся на поставке свежих фруктов и овощей на международные рынки. Наша миссия — донести вкус узбекских фруктов до всего мира.
+        </p>
+      </div>
+      <ul class="about-points">
+        <li data-ru="Прямые поставки от фермеров"     data-en="Direct supply from farmers">Прямые поставки от фермеров</li>
+        <li data-ru="Строгий контроль качества"        data-en="Strict quality control">Строгий контроль качества</li>
+        <li data-ru="Международные сертификаты"        data-en="International certificates">Международные сертификаты</li>
+        <li data-ru="Гибкие условия сотрудничества"   data-en="Flexible cooperation terms">Гибкие условия сотрудничества</li>
+        <li data-ru="Собственный парк рефрижераторов" data-en="Own refrigerated fleet">Собственный парк рефрижераторов</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- КОНТАКТЫ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-tag" data-ru="КОНТАКТЫ" data-en="CONTACT">КОНТАКТЫ</div>
+      <h2 class="section-title" data-ru="Свяжитесь с нами" data-en="Get in Touch">Свяжитесь с нами</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong data-ru="Адрес" data-en="Address">Адрес</strong>
+              <span>Каракалпакстан, Шымбай, Узбекистан</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <strong data-ru="Телефон" data-en="Phone">Телефон</strong>
+              <span>+998 XX XXX-XX-XX</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <span>info@shymbayfruit.uz</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <input type="text"  name="name"    required data-placeholder-ru="Ваше имя"    data-placeholder-en="Your name"  placeholder="Ваше имя" />
+          <input type="email" name="email"   required data-placeholder-ru="Email"        data-placeholder-en="Email"      placeholder="Email" />
+          <input type="text"  name="company"          data-placeholder-ru="Компания"     data-placeholder-en="Company"    placeholder="Компания" />
+          <textarea           name="message" required data-placeholder-ru="Сообщение..." data-placeholder-en="Message..."  placeholder="Сообщение..."></textarea>
+          <button type="submit" class="btn-submit" data-ru="Отправить заявку" data-en="Send Request">Отправить заявку</button>
+          <p class="form-success" id="form-success"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ФУТЕР -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="logo light">Shymbay <span>Fruit</span> Export</div>
+      <p data-ru="© 2025 Все права защищены · Шымбай, Узбекистан"
+         data-en="© 2025 All rights reserved · Shymbay, Uzbekistan">
+        © 2025 Все права защищены · Шымбай, Узбекистан
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
